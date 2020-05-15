@@ -7,21 +7,19 @@
     <artifactId>yh-manager</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <groupId>com.yh</groupId>
   <artifactId>yh-manager-web</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
   <name>yh-manager-web Maven Webapp</name>
   <url>http://maven.apache.org</url>
-  <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
-    </dependency>
-  </dependencies>
   <build>
     <finalName>yh-manager-web</finalName>
   </build>
+  
+  <dependencies>
+      <!-- SpringBoot Web容器 -->
+      <dependency>
+          <groupId>org.springframework.boot</groupId>
+          <artifactId>spring-boot-starter-web</artifactId>
+      </dependency>
+  </dependencies>
 </project>
